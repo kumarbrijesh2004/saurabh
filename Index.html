@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Priya 💌</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  color:#333;
+  text-align:center;
+}
+
+.container{
+  max-width:900px;
+  margin:40px auto;
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  animation:fadeIn 2s ease;
+}
+
+h1{
+  font-size:2.6em;
+  color:#ff4d6d;
+}
+
+h2{
+  color:#ff758f;
+  margin-top:30px;
+}
+
+p{
+  font-size:1.15em;
+  line-height:1.8em;
+}
+
+.heart{
+  font-size:50px;
+  animation:beat 1s infinite;
+}
+
+button{
+  background:#ff4d6d;
+  border:none;
+  padding:15px 30px;
+  font-size:18px;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  background:#ff1e4d;
+}
+
+.hidden{
+  display:none;
+  margin-top:25px;
+  animation:fadeIn 1.5s ease;
+}
+
+/* PHOTO SECTION */
+
+.photo-section{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin-top:25px;
+}
+
+.photo-section img{
+  width:260px;
+  height:320px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.photo-section img:hover{
+  transform:scale(1.05);
+}
+
+/* ANIMATIONS */
+
+@keyframes beat{
+  0%{transform:scale(1);} 
+  50%{transform:scale(1.2);} 
+  100%{transform:scale(1);} 
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);} 
+  to{opacity:1; transform:translateY(0);} 
+}
+
+footer{
+  margin-top:35px;
+  font-size:14px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="heart">❤️</div>
+
+  <h1>Priya, I'm Truly Sorry</h1>
+  <h2>Please read this with your heart…</h2>
+
+  <p>
+    I know things haven’t been right between us. Maybe I overreacted,
+    maybe I misunderstood, maybe I let emotions speak louder than patience.
+    But one thing I know for sure — I never wanted distance between us.
+  </p>
+
+  <p>
+    You once asked for friendship… and I accepted it genuinely.
+    That friendship meant a lot to me. That’s why it hurt when it felt like
+    it broke suddenly. I’m not blaming you… I just want you to understand my heart.
+  </p>
+
+  <p>
+    Relationships, bonds, and friendships grow when two people talk,
+    understand, and stay — even when things get confusing.
+  </p>
+
+  <p>
+    I’m not here to force anything. Not love. Not friendship. Not even a reply.
+    I’m here because what we had was real for me… and real things deserve
+    one honest chance.
+  </p>
+
+  <button onclick="showMessage()">Click if you still care 💭</button>
+
+  <div id="message" class="hidden">
+    <p>
+      Priya… 🌙  
+      I don’t want perfection between us. I just want understanding.  
+      If I made mistakes, I’m ready to correct them.  
+      If I hurt you, I’m ready to heal it.  
+      If you need time, I’ll respect it.
+    </p>
+
+    <p>
+      But don’t let something beautiful end just because it became complicated.
+      Some connections are rare… and ours is one of them for me.
+    </p>
+
+    <h2>I still value you. Always. 💗</h2>
+  </div>  
+
+  <!-- PHOTO SECTION -->
+  <h2>Our Memories 📸</h2>
+
+  <div class="photo-section">
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo2.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+  </div>
+
+  <footer>
+    Made with true feelings, not ego.
+  </footer>
+
+</div>
+
+<script>
+function showMessage(){
+  document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
